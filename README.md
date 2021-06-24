@@ -1,9 +1,9 @@
 <h1 align="center">
   DetoxTemplate
 </h1>
-<br/>
+
 ![Project gif](Assets/project-gif.gif)
-<br/>
+
 ## Why this template exist?
 This template was built in order to help you speed things up a little bit when opening an issue/bug.
 It saves you the time of setting up a completely new project just for demostrating the problem you encountered. 
