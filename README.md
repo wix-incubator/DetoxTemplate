@@ -68,7 +68,7 @@ TODO
 
 ## How to add your failing use case?
 
-Unfortunately, there is no one-size-fits-all fomula for that. However, once you're managed to properly build and run the existing dummy test at least one on the associated platform (Android/iOS) - generally you'd have to:
+Unfortunately, there is no one-size-fits-all formula for that. However, once you're managed to properly build and run the preexisting dummy Detox test at least once on the associated platform (Android/iOS) - generally you'd have to:
 
 1. Edit the build dependencies scripts (`build.gradle` and `app/build.gradle` on Android, or `Podfile` on iOS) in order to add specific dependencies you think might be related to your issue.
 2. Either change the preexisting example screen, written in JSX - or add new ones (i.e. under `Screens/`). For the latter approach, be sure to also export your screens in `Screens/index.js`, and add a way to navigate to them in the main screen (e.g. a button in `App.js`).
