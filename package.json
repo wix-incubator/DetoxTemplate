@@ -1,8 +1,13 @@
 {
-  "name": "DetoxTemplate",
+  "name": "detox-template",
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build:android-debug": "detox build -c android.emu.debug",
+    "build:android-release": "detox build -c android.emu.release",
+    "test:android-debug": "detox test -c android.emu.debug -l verbose",
+    "test:android-release": "detox test -c android.emu.release -l verbose",
+    "clean:android": "pushd android; ./gradlew clean; popd",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
