@@ -38,11 +38,14 @@ npm start
 
 Executing the tests (with the metro bundler server running in the background):
 
+1. Find which Android AVD you have installed (or [set one up](https://developer.android.com/studio/run/managing-avds))
+2. Assuming you wish to run your tests on `Pixel_4_API_30` (detox is `Pixel_3A_API_29`), run:
+
 ```sh
-npm run test:android-debug
+npm run test:android-debug -- -n Pixel_4_API_30
 ```
 
-### Android, in Release mode
+### Android, in Release mode (preferred)
 
 Building the project:
 
@@ -50,12 +53,25 @@ Building the project:
 npm run build:android-release
 ```
 
-Executing the tests (no metro bundler needed):
+Executing the tests (metro-budler not needed):
+
+1. Find which Android AVD you have installed (or [set one up](https://developer.android.com/studio/run/managing-avds))
+2. Assuming you wish to run your tests on `Pixel_4_API_30` (detox is `Pixel_3A_API_29`), run:
 
 ```sh
-npm run test:android-release
+npm run test:android-release -- -n Pixel_4_API_30
 ```
 
 ## iOS
 
 TODO
+
+## How to add your failing use case?
+
+Unfortunately, there is no one-size-fits-all fomula for that. However, once you're managed to properly build and run the existing dummy test at least one on the associated platform (Android/iOS) - generally you'd have to:
+
+1. Edit the build dependencies scripts (`build.gradle` and `app/build.gradle` on Android, or `Podfile` on iOS) in order to add specific dependencies you think might be related to your issue.
+2. Either change the preexisting example screen, written in JSX - or add new ones (i.e. under `Screens/`). For the latter approach, be sure to also export your screens in `Screens/index.js`, and add a way to navigate to them in the main screen (e.g. a button in `App.js`).
+3. Either edit the preexisting Detox test case (see `e2e/ExampleScreen.e2e.js`), or add your custom one (i.e. under `e2e/`) -- which runs a flow where your problem gets reproduced.
+
+Should you manage to have your issue properly reproduced: `git commit` and `git push` your changes, and share a link to your repo as a comment in your Detox issue!
