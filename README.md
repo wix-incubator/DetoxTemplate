@@ -2,7 +2,7 @@
   DetoxTemplate
 </h1>
 
-![](assets/project-gif.gif)
+![Project gif](Assets/project-gif.gif)
 
 ## Why this template exist?
 This template was built in order to help you speed things up a little bit when opening an issue/bug.
