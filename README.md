@@ -2,7 +2,9 @@
   DetoxTemplate
 </h1>
 
-![Project gif](Assets/project-gif.gif)
+<p align="center">
+  <img src="Assets/project-gif.gif" alt="animated" />
+</p>
 
 ## Why this template exist?
 This template was built in order to help you speed things up a little bit when opening an issue/bug.
