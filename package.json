@@ -5,8 +5,10 @@
   "scripts": {
     "build:android-debug": "detox build -c android.emu.debug",
     "build:android-release": "detox build -c android.emu.release",
+    "build:ios": "detox build -c ios",
     "test:android-debug": "detox test -c android.emu.debug -l verbose",
     "test:android-release": "detox test -c android.emu.release -l verbose",
+    "test:ios": "detox test -c ios -l verbose",
     "clean:android": "pushd android; ./gradlew clean; popd",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
