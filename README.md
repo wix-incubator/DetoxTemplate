@@ -2,7 +2,7 @@
   DetoxTemplate
 </h1>
 <br/>
-![Project gif](Assets/project-gif.gif =250x250)
+![Project gif](Assets/project-gif.gif)
 <br/>
 ## Why this template exist?
 This template was built in order to help you speed things up a little bit when opening an issue/bug.
