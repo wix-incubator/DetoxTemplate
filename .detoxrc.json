@@ -2,10 +2,15 @@
   "testRunner": "jest",
   "runnerConfig": "e2e/config.json",
   "apps": {
-    "ios": {
+    "ios.release": {
       "type": "ios.app",
-      "binaryPath": "ios/DerivedData/DetoxTemplate/Build/Products/Debug-iphonesimulator/DetoxTemplate.app",
-      "build": ":"
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/DetoxTemplate.app",
+      "build": "xcodebuild -workspace ios/DetoxTemplate.xcworkspace -scheme DetoxTemplate -configuration Release -sdk iphonesimulator -derivedDataPath ios/build"
+    },
+    "ios.debug": {
+      "type": "ios.app",
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/DetoxTemplate.app",
+      "build": "xcodebuild -workspace ios/DetoxTemplate.xcworkspace -scheme DetoxTemplate -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build"
     },
     "android.debug": {
       "type": "android.apk",
@@ -33,9 +38,13 @@
     }
   },
   "configurations": {
-    "ios": {
+    "ios.sim.release": {
       "device": "simulator",
-      "app": "ios"
+      "app": "ios.release"
+    },
+    "ios.sim.debug": {
+      "device": "simulator",
+      "app": "ios.debug"
     },
     "android.emu.debug": {
       "device": "emulator",
