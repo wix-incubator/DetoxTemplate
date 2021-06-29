@@ -82,7 +82,7 @@ Executing the tests (with the metro bundler server running in the background):
 npm run test:ios-debug
 ```
 
-## iOS, in Release mode
+### iOS, in Release mode
 
 Building the project:
 
