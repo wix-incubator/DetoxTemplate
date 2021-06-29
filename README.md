@@ -62,9 +62,39 @@ Executing the tests (metro-budler not needed):
 npm run test:android-release -- -n Pixel_4_API_30
 ```
 
-## iOS
+### iOS, in Debug mode
 
-TODO
+Building the project:
+
+```sh
+npm run build:ios-debug
+```
+
+Launching the metro JS bundler (for auto app-reload):
+
+```sh
+npm start
+```
+
+Executing the tests (with the metro bundler server running in the background):
+
+```sh
+npm run test:ios-debug
+```
+
+## iOS, in Release mode
+
+Building the project:
+
+```sh
+npm run build:ios-release
+```
+
+Executing the tests (metro-budler not needed):
+
+```sh
+npm run test:ios-release
+```
 
 ## How to add your failing use case?
 
