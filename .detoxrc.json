@@ -30,6 +30,12 @@
         "type": "iPhone 12 Pro"
       }
     },
+    "simulator.none": {
+      "type": "ios.none",
+      "device": {
+        "type": "iPhone 12 Pro"
+      }
+    },
     "emulator": {
       "type": "android.emulator",
       "device": {
@@ -45,6 +51,17 @@
     "ios.sim.debug": {
       "device": "simulator",
       "app": "ios.debug"
+    },
+    "ios.none": {
+      "type": "ios.none",
+      "binaryPath": "ios",
+      "device": {
+        "type": "iPhone 12 Pro"
+      },
+      "session": {
+        "server": "ws://localhost:8099",
+        "sessionId": "wix.com.DetoxTemplate"
+      }
     },
     "android.emu.debug": {
       "device": "emulator",

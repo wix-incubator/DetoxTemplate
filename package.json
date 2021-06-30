@@ -11,6 +11,7 @@
     "test:android-release": "detox test -c android.emu.release -l verbose",
     "test:ios-debug": "detox test -c ios.sim.debug -l verbose",
     "test:ios-release": "detox test -c ios.sim.release -l verbose",
+    "test:ios-none": "detox test -c ios.none -l verbose",
     "clean:android": "pushd android; ./gradlew clean; popd",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
