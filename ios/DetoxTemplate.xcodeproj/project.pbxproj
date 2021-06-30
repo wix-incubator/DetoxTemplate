@@ -39,6 +39,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AD39B45F268C6CC3007EC3A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* DetoxTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetoxTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +147,6 @@
 				6828F31D83C7B0DBF96ECCA1 /* Pods-DetoxTemplate-tvOSTests.debug.xcconfig */,
 				95AA612375EA7BC625E33855 /* Pods-DetoxTemplate-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -234,6 +246,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C6F813FFA64A72365DB6D6C2 /* [CP] Copy Pods Resources */,
 				732EC8E3273F10E9599FB61C /* [CP] Embed Pods Frameworks */,
+				AD39B45F268C6CC3007EC3A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -702,7 +715,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = wix.com.DetoxTemplate;
 				PRODUCT_NAME = DetoxTemplate;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -724,7 +737,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = wix.com.DetoxTemplate;
 				PRODUCT_NAME = DetoxTemplate;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -751,7 +764,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DetoxTemplate-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "wix.com.DetoxTemplate-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -779,7 +792,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DetoxTemplate-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "wix.com.DetoxTemplate-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
