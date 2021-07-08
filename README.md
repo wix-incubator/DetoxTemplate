@@ -67,6 +67,9 @@ npm run test:android-release -- -n Pixel_4_API_30
 Building the project:
 
 ```sh
+cd ios
+pod install
+cd ..
 npm run build:ios-debug
 ```
 
@@ -87,6 +90,9 @@ npm run test:ios-debug
 Building the project:
 
 ```sh
+cd ios
+pod install
+cd ..
 npm run build:ios-release
 ```
 
