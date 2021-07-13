@@ -20,6 +20,7 @@
 		5C4E4F940C68A1ED42A1646F /* libPods-DetoxTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5699880AC28EDFBE115A0CD /* libPods-DetoxTemplate.a */; };
 		7FA8108CE0A0235F2B38ACF2 /* libPods-DetoxTemplate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F645B7C1C7C4B459E24294 /* libPods-DetoxTemplate-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AD3BFCF3269DC5F300A01CF7 /* CrashModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3BFCF2269DC5F300A01CF7 /* CrashModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DetoxTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95AA612375EA7BC625E33855 /* Pods-DetoxTemplate-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetoxTemplate-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DetoxTemplate-tvOSTests/Pods-DetoxTemplate-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9EC59479EE8FE48888F63EDA /* libPods-DetoxTemplate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DetoxTemplate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3BFCF1269DC5F300A01CF7 /* CrashModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashModule.h; sourceTree = "<group>"; };
+		AD3BFCF2269DC5F300A01CF7 /* CrashModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashModule.m; sourceTree = "<group>"; };
 		D5699880AC28EDFBE115A0CD /* libPods-DetoxTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DetoxTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0288C6CB72E6952F8FF910 /* Pods-DetoxTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetoxTemplate.debug.xcconfig"; path = "Target Support Files/Pods-DetoxTemplate/Pods-DetoxTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				AD3BFCF1269DC5F300A01CF7 /* CrashModule.h */,
+				AD3BFCF2269DC5F300A01CF7 /* CrashModule.m */,
 			);
 			name = DetoxTemplate;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				AD3BFCF3269DC5F300A01CF7 /* CrashModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

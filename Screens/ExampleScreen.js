@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
-import {Text, View, TextInput} from 'react-native';
+import {Text, View, TextInput, NativeModules} from 'react-native';
 
+const {CrashModule} = NativeModules;
 export default class ExampleScreen extends Component {
+
+  constructor(props) {
+    super(props);
+    CrashModule.crashNow();
+  }
+
   render() {
     return (
       <View style={{flex: 1, marginTop: 80, marginHorizontal: 20}}>
