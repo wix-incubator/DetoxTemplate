@@ -8,6 +8,7 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(crashNow)
 {
+  NSLog(@"Just a test");
   assert(NO);
 }
 
