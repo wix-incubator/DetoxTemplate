@@ -64,7 +64,7 @@ npm run test:android-release -- -n Pixel_4_API_30
 
 ### iOS, in Debug mode
 
-First install pods:
+First install pods:<br/>
 Install [Cocoapods](https://cocoapods.org/) if you don't have it already.
 
 ```sh
