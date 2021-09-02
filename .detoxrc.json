@@ -10,7 +10,7 @@
     "ios.debug": {
       "type": "ios.app",
       "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/DetoxTemplate.app",
-      "build": "xcodebuild -workspace ios/DetoxTemplate.xcworkspace -scheme DetoxTemplate -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -arch x86_64"
+      "build": "STRIP_INSTALLED_PRODUCT=NO STRIP_SWIFT_SYMBOLS=NO xcodebuild -workspace ios/DetoxTemplate.xcworkspace -scheme DetoxTemplate -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -arch x86_64"
     },
     "android.debug": {
       "type": "android.apk",
