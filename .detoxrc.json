@@ -27,47 +27,41 @@
     "simulator": {
       "type": "ios.simulator",
       "device": {
-        "type": "iPhone 12 Pro"
+        "type": "iPhone 12",
+        "os": "iOS 14.5"
       }
     },
-    "simulator.none": {
-      "type": "ios.none",
-      "device": {
-        "type": "iPhone 12 Pro"
-      }
-    },
-    "emulator": {
+    "emulator.intel": {
       "type": "android.emulator",
       "device": {
-        "avdName": "Pixel_3A_API_29"
+        "avdName": "Pixel_API_S_Intel"
+      }
+    },
+    "emulator.arm": {
+      "type": "android.emulator",
+      "device": {
+        "avdName": "Pixel_API_S_ARM"
       }
     }
   },
   "configurations": {
-    "ios.sim.release": {
+    "ios.staging": {
+      "device": "simulator",
+      "app": "ios.staging"
+    },
+    "ios.release": {
       "device": "simulator",
       "app": "ios.release"
     },
-    "ios.sim.debug": {
-      "device": "simulator",
-      "app": "ios.debug"
+    "android.staging.intel": {
+      "device": "emulator.intel",
+      "app": "android.staging"
     },
-    "ios.none": {
-      "type": "ios.none",
-      "binaryPath": "ios",
-      "device": {
-        "type": "iPhone 12 Pro"
-      },
-      "session": {
-        "server": "ws://localhost:8099",
-        "sessionId": "wix.com.DetoxTemplate"
-      }
+    "android.staging.arm": {
+      "device": "emulator.arm",
+      "app": "android.staging"
     },
-    "android.emu.debug": {
-      "device": "emulator",
-      "app": "android.debug"
-    },
-    "android.emu.release": {
+    "android.release": {
       "device": "emulator",
       "app": "android.release"
     }
